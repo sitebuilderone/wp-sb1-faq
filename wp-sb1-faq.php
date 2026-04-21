@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WP SB1 FAQ
+ * Plugin Name: WP SiteBuilderOne FAQ
  * Description: FAQ custom post type with optional service linking, shortcode, FAQPage schema, and REST API support. No dependencies required.
  * Version:     1.0.0
  * Author:      SiteBuilderOne
