@@ -32,6 +32,37 @@ All functionality is split into static-method classes, each in `includes/`. The 
 - `_sb1_faq_answer` — plain-text answer string
 - `_sb1_faq_related_service` — integer post ID of the linked `service` post (optional)
 
+## Shortcode Usage
+
+The `[sb1_faq]` shortcode renders a list of FAQs and injects inline FAQPage JSON-LD schema.
+
+```
+// All FAQs, default order
+[sb1_faq]
+
+// Show only 5 FAQs
+[sb1_faq count="5"]
+
+// Filter by service slug
+[sb1_faq service="web-design"]
+
+// Filter by service post ID
+[sb1_faq service="42"]
+
+// Custom ordering
+[sb1_faq orderby="title" order="ASC"]
+
+// Combined
+[sb1_faq service="web-design" count="3" orderby="title" order="ASC"]
+```
+
+| Attribute | Default | Notes |
+|---|---|---|
+| `count` | `-1` | `-1` returns all FAQs |
+| `service` | *(empty)* | Accepts a service post ID or slug; omit to show all |
+| `orderby` | `menu_order` | Any valid WordPress `WP_Query` `orderby` value |
+| `order` | `ASC` | `ASC` or `DESC` |
+
 ## Template Overrides
 
 The shortcode template at `templates/faq-list.php` can be overridden by a theme by placing a file at `{active-theme}/sb1-faq/faq-list.php`. The override is resolved in `SB1_FAQ_Shortcode::locate_template()` via `locate_template()`.
