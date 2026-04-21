@@ -1,0 +1,25 @@
+#sb1-faq-meta {
+	padding: 4px 0;
+}
+
+#sb1-faq-meta .sb1-meta-field {
+	margin-bottom: 16px;
+}
+
+#sb1-faq-meta .sb1-meta-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+#sb1-faq-meta .sb1-meta-field textarea,
+#sb1-faq-meta .sb1-meta-field select {
+	width: 100%;
+	max-width: 600px;
+}
+
+#sb1-faq-meta .sb1-meta-field .description {
+	margin-top: 4px;
+	color: #757575;
+	font-style: italic;
+}
