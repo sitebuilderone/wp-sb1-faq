@@ -1,25 +1,44 @@
-#sb1-faq-meta {
+#sb1-faq-meta,
+#sb1-howto-meta {
 	padding: 4px 0;
 }
 
-#sb1-faq-meta .sb1-meta-field {
+#sb1-faq-meta .sb1-meta-field,
+#sb1-howto-meta .sb1-meta-field {
 	margin-bottom: 16px;
 }
 
-#sb1-faq-meta .sb1-meta-field label {
+#sb1-faq-meta .sb1-meta-field label,
+#sb1-howto-meta .sb1-meta-field label {
 	display: block;
 	font-weight: 600;
 	margin-bottom: 4px;
 }
 
 #sb1-faq-meta .sb1-meta-field textarea,
-#sb1-faq-meta .sb1-meta-field select {
+#sb1-faq-meta .sb1-meta-field select,
+#sb1-howto-meta .sb1-meta-field textarea,
+#sb1-howto-meta .sb1-meta-field select,
+#sb1-howto-meta .sb1-meta-field input[type="text"],
+#sb1-howto-meta .sb1-meta-field input[type="url"] {
 	width: 100%;
 	max-width: 600px;
 }
 
-#sb1-faq-meta .sb1-meta-field .description {
+#sb1-faq-meta .sb1-meta-field .description,
+#sb1-howto-meta .sb1-meta-field .description {
 	margin-top: 4px;
 	color: #757575;
 	font-style: italic;
+}
+
+#sb1-howto-meta .sb1-howto-step {
+	border: 1px solid #dcdcde;
+	margin: 12px 0;
+	max-width: 620px;
+	padding: 12px;
+}
+
+#sb1-howto-meta .sb1-howto-step h4 {
+	margin: 0 0 12px;
 }

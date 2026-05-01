@@ -25,7 +25,7 @@ class SB1_FAQ_CPT {
 			'labels'       => $labels,
 			'public'       => true,
 			'has_archive'  => false,
-			'rewrite'      => array( 'slug' => 'faq' ),
+			'rewrite'      => array( 'slug' => SB1_FAQ_Admin_Settings::get_faq_slug() ),
 			'supports'     => array( 'title', 'editor' ),
 			'menu_icon'    => 'dashicons-editor-help',
 			'show_in_rest' => true,
